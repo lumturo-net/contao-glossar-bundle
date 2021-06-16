@@ -1,5 +1,5 @@
 {
-  "name": "lumturo-net/glossar-bundle",
+  "name": "lumturo-net/contao-glossar-bundle",
   "description": "Glossar management for Contao 4",
   "type": "contao-bundle",
   "license": "LGPL-3.0-or-later",
