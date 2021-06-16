@@ -1,0 +1,13 @@
+services:
+  _defaults:
+    autowire: true
+    autoconfigure: true
+    public: true
+
+  LumturoNet\ContaoGlossarBundle\:
+    resource: ../../../../src/Glossar
+    exclude: ../../../../src/Glossar/{Entity,Migrations,Model,Resources,Tests,Widget}
+
+  LumturoNet\ContaoGlossarBundle\Controller\:
+    resource: ../../../../src/Glossar/Controller
+    public: true

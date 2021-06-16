@@ -1,0 +1,6 @@
+# Composer
+.idea
+
+# PhpUnit
+/.phpunit.result.cache
+/phpunit.xml

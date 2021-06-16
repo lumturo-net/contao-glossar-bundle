@@ -1,0 +1,7 @@
+glossar_entry:
+  path: /xhr/glossar/{strWord}
+  defaults:
+    _controller: GlossarBundle:Word:find
+    _scope: fontend
+    _token_check: false
+    strWord: "null"

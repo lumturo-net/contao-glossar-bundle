@@ -1,0 +1,49 @@
+{
+  "name": "lumturo-net/glossar-bundle",
+  "description": "Glossar management for Contao 4",
+  "type": "contao-bundle",
+  "license": "LGPL-3.0-or-later",
+  "authors": [
+    {
+      "name": "rolf.staege@lumturo.net"
+    },
+    {
+      "name": "christian.wederka@lumturo.net"
+    }
+  ],
+  "require": {
+    "php": "^7.2 || ^8.0",
+    "contao/core-bundle": "^4.4"
+  },
+  "conflict": {
+    "contao/manager-plugin": "<2.0 || >=3.0"
+  },
+  "require-dev": {
+    "contao/manager-plugin": "^2.0"
+  },
+  "extra": {
+    "contao-manager-plugin": "LumturoNet\\ContaoGlossarBundle\\ContaoManager\\Plugin"
+  },
+  "autoload": {
+    "psr-4": {
+      "LumturoNet\\ContaoGlossarBundle\\": "src/"
+    }
+  },
+  "autoload-dev": {
+    "psr-4": {
+      "LumturoNet\\ContaoGlossarBundle\\Tests\\": "tests/"
+    }
+  },
+  "support": {
+    "issues": "https://github.com/lumturo-net/contao-glossar-bundle/issues",
+    "source": "https://github.com/lumturo-net/contao-glossar-bundle"
+  },
+  "scripts": {
+    "cs-fixer": [
+      "vendor/bin/ecs check src/ tests/ --fix --ansi"
+    ],
+    "post-package-install": [
+      "LumturoNet\\ContaoGlossarBundle\\Install::moveTinyMCETemplate"
+    ]
+  }
+}

@@ -1,0 +1,30 @@
+.glossar-entry {
+    border-bottom: 1px solid #000000;
+    font-style: italic;
+    cursor: pointer;
+}
+
+.glossar-explanation {
+    position: relative;
+    display:inline-block;
+    background:#c2ccd9;
+    padding:0 2rem 0 1rem;
+    margin:0 1rem;
+}
+
+.glossar-close {
+    position: absolute;
+    right: .5rem;
+    top: 50%;
+    transform: translateY(-50%);
+    color: #ff0000;
+    font-weight: 700;
+    font-size: 1.25rem;
+    cursor: pointer;
+}
+
+.glossar-close::after {
+    display:inline-block;
+    content:'\00D7';
+}
+
