@@ -2,6 +2,7 @@
 namespace LumturoNet\ContaoGlossarBundle\ContaoManager;
 
 use Contao\ManagerPlugin\Routing\RoutingPluginInterface;
+use LumturoNet\ContaoGlossarBundle\ContaoGlossarBundle;
 use Symfony\Component\Config\Loader\LoaderResolverInterface;
 use Symfony\Component\HttpKernel\KernelInterface;
 
