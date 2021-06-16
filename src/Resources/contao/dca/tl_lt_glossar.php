@@ -37,11 +37,6 @@ $GLOBALS['TL_DCA']['tl_lt_glossar'] = [
                 'icon'            => 'delete.svg',
                 'attributes'      => 'onclick="if(!confirm(\'' . $GLOBALS['TL_LANG']['MSC']['deleteConfirm'] . '\'))return false;Backend.getScrollOffset()"',
             ],
-            'toggle' => [
-                'icon'            => 'visible.svg',
-                'attributes'      => 'onclick="Backend.getScrollOffset();return AjaxRequest.toggleVisibility(this,%s)"',
-                'showInHeader'    => true
-            ],
             'show' => [
                 'href' => 'act=show',
                 'icon' => 'show.svg'
