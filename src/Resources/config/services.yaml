@@ -5,9 +5,9 @@ services:
     public: true
 
   LumturoNet\ContaoGlossarBundle\:
-    resource: ../src
-    exclude: ../src/{Entity,Migrations,Model,Resources,Tests,Widget}
+    resource: ../../../src
+    exclude: ../../../src/{Entity,Migrations,Model,Resources,Tests,Widget}
 
   LumturoNet\ContaoGlossarBundle\Controller\:
-    resource: ../src/Controller
+    resource: ../../../src/Controller
     public: false
