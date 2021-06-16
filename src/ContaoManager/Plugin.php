@@ -1,7 +1,10 @@
 <?php
 namespace LumturoNet\ContaoGlossarBundle\ContaoManager;
 
+use Contao\CoreBundle\ContaoCoreBundle;
 use Contao\ManagerPlugin\Routing\RoutingPluginInterface;
+use Contao\ManagerPlugin\Bundle\Config\BundleConfig;
+use Contao\ManagerPlugin\Bundle\Parser\ParserInterface;
 use LumturoNet\ContaoGlossarBundle\ContaoGlossarBundle;
 use Symfony\Component\Config\Loader\LoaderResolverInterface;
 use Symfony\Component\HttpKernel\KernelInterface;
