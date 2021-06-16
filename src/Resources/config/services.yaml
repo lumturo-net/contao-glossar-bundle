@@ -10,4 +10,4 @@ services:
 
   LumturoNet\ContaoGlossarBundle\Controller\:
     resource: ../../../src/Controller
-    public: false
+    public: true
