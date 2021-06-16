@@ -10,12 +10,12 @@ declare(strict_types=1);
  * @license LGPL-3.0-or-later
  */
 
-namespace LumturoNet\Glossar;
+namespace LumturoNet\ContaoGlossarBundle;
 
 use LumturoNet\ContaoGlossarBundle\DependencyInjection\GlossarExtension;
 use Symfony\Component\HttpKernel\Bundle\Bundle;
 
-class GlossarBundle extends Bundle
+class ContaoGlossarBundle extends Bundle
 {
     public function getContainerExtension()
     {
