@@ -1,14 +1,22 @@
 # Contao 4 Glossar bundle
 
-Contao is an Open Source PHP Content Management System for people who want a
-professional website that is easy to maintain. Visit the [project website][1]
-for more information.
+Glossarverwaltung für Contao 4
 
-## Install
+## !!! Wichtig !!!
+Falls an dem `fe_page` Template Anpassungen vorgenommen wurden,
+ist darauf zu achten, dass folgendes im `<head>` NICHT(!) entfernt
+wurde:
 
+```
+<?php $this->block('head'); ?>
 
-## Customize
+  ...
+  
+  <?= $this->head; ?>
+  
+  ...
+  
+<?php $this->endblock(); ?>
+```
 
-
-[1]: https://contao.org
-[2]: https://docs.contao.org/dev/framework/manager-plugin/#the-bundleplugininterface
+Andernfalls ist Contao nicht in der Lage, das mitglieferte JavaScript über TL_JAVASCRIPT global einzubinden.
