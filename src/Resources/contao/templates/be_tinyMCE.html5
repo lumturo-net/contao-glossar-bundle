@@ -22,11 +22,10 @@ window.tinymce && tinymce.init({
       text: 'Als Glossarbegriff markieren',
       icon: false,
       onclick: function () {
-        var $selectedText   = editor.selection.getContent({format: 'text'});
-        var $currentContent = editor.getContent({format: 'html'});
-        var $newContent     = $currentContent.replace($selectedText, '<def class="glossar-entry" data-word="' + $selectedText + '">' + $selectedText + '</def>');
+        var $selectedContent = editor.selection.getContent({format: 'text'});
+        var $newContent      = '<def class="glossar-entry" data-word="' + $selectedContent + '">' + $selectedContent + '</def>';
 
-        editor.setContent($newContent);
+        editor.selection.setContent($newContent, {format: 'html'});
       }
     });
   },
