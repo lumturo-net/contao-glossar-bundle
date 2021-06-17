@@ -70,7 +70,6 @@ $GLOBALS['TL_DCA']['tl_lt_glossar'] = [
             'sql'       => 'text null default ""',
             'eval'      => [
                 'mandatory' => true,
-                'rte'       => 'tinyMCE',
                 'tl_class'  => 'clr'
             ]
         ]
