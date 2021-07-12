@@ -45,3 +45,16 @@ Wort als Glossarbegriff markiert werden. Dazu gibt es in dem Editor den Button `
 
 Markieren Sie das gewünschte Wort und klicken auf diesen Button, um im Frontend die Erklärung für dieses Wort 
 auszugeben. 
+
+## CSS Klassen
+> `.glossar-entry`
+>
+> Glossar-Wort im Fließtext
+
+> `.glossar-explanation`
+>
+> Erklärung für das Glossar-Wort
+
+> `.glossar-close`
+>
+> Schließen-Button in der Erklärung
