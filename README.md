@@ -37,11 +37,23 @@ Andernfalls ist Contao nicht in der Lage, das mitglieferte JavaScript über TL_J
 Im Backend befindet sich ein neuer Menüpunk `Glossar`. Dort können entsprechende Begriffe sowie
 deren Erklärungen angegeben werden.
 
-Die Ausgabe im Frontend erfolgt über Bearbeitung der Inhaltselement eines Artikels.
+Die Ausgabe im Frontend erfolgt über Bearbeitung der Inhaltselement eines Artikels. Dazu kann innerhalb
+des Fließtextes ein beliebiges Wort, welches zuvor als Glossar-Begriff angelegt wurde, hinzugeschrieben werden.
 
-Beispielsweise
-kann bei Bearbeitung eines `Text` Inhaltselements innerhalb des Eingabebereiches für den Text das gewünschte
-Wort als Glossarbegriff markiert werden. Dazu gibt es in dem Editor den Button `Als Glossarbegriff markieren`.
+Es ist darauf zu achten, dass die Schreibweise exakt (inkl. Groß- und Kleinschreibung) überein stimmen. 
+Ansonsten wird der Begriff nicht entsprechend als Glossar-Wort im Frontend markiert ausgegeben.  
 
-Markieren Sie das gewünschte Wort und klicken auf diesen Button, um im Frontend die Erklärung für dieses Wort
-auszugeben. 
+
+## CSS Klassen
+> `.glossar-entry`
+> 
+> Glossar-Wort im Fließtext
+
+> `.glossar-explanation`
+> 
+> Erklärung für das Glossar-Wort
+
+> `.glossar-close`
+> 
+> Schließen-Button in der Erklärung
+
