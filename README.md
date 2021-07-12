@@ -3,10 +3,10 @@ Glossarverwaltung für Contao 4.9
 
 ## Installation
 ### SSH
-`composer require lumturo-net/contao-glossar-bundle`
+`composer require lumturo-net/contao-glossar-bundle:^2.0`
 
 ### Contao Manager
-Das Bundle kann normal im Contao Manager gesucht und installiert werden.
+Im Contao Manager ist die Version ^2.0 bei der Paketinstallation anzugeben.
 
 ## Konfiguration
 
@@ -44,4 +44,17 @@ kann bei Bearbeitung eines `Text` Inhaltselements innerhalb des Eingabebereiches
 Wort als Glossarbegriff markiert werden. Dazu gibt es in dem Editor den Button `Als Glossarbegriff markieren`.
 
 Markieren Sie das gewünschte Wort und klicken auf diesen Button, um im Frontend die Erklärung für dieses Wort
-auszugeben. 
+auszugeben.
+
+## CSS Klassen
+> `.glossar-entry`
+>
+> Glossar-Wort im Fließtext
+
+> `.glossar-explanation`
+>
+> Erklärung für das Glossar-Wort
+
+> `.glossar-close`
+>
+> Schließen-Button in der Erklärung
