@@ -41,6 +41,9 @@
   "scripts": {
     "cs-fixer": [
       "vendor/bin/ecs check src/ tests/ --fix --ansi"
+    ],
+    "post-package-install": [
+      "LumturoNet\\ContaoGlossarBundle\\Install::moveTinyMCETemplate"
     ]
   }
 }

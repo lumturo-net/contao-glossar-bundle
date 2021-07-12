@@ -1,9 +1,3 @@
-glossar_all:
-  path: /xhr/glossar
-  defaults:
-    _controller: ContaoGlossarBundle:Word:findAll
-    _scope: fontend
-    _token_check: false
 glossar_entry:
   path: /xhr/glossar/{strWord}
   defaults:
